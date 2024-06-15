@@ -82,8 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   createObjectDetector() async {
-    final modelPath =
-        await _getModel('assets/ml/veg_mobilenet_metadata.tflite');
+    final modelPath = await _getModel('assets/ml/mobilenet_metadata.tflite');
     final options = LocalObjectDetectorOptions(
         modelPath: modelPath,
         classifyObjects: true,
